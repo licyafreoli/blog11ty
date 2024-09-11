@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo do header */
+  header {
+    background: #121212;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  header nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  /* Estilo do main */
+  main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  main h1, main h2, main h3 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+  
+  article {
+    margin-bottom: 40px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  article h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  article p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  /* Links */
+  a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo das listas */
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  ul li {
+    list-style: circle;
+  }
+  
+  /* Estilo das imagens */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo do footer */
+  footer {
+    background: #121212;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 2px solid #333;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #ffcc00;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header nav a {
+      font-size: 1rem;
+    }
+  
+    article h2 {
+      font-size: 1.75rem;
+    }
+  }
+  

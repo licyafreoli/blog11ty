@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}Meu Blog{% endblock %}</title>
+
+  <!-- Link para a fonte Roboto do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <!-- Conteúdo do site -->
+  <header>
+    {% include "partials/header.njk" %}
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    {% include "partials/footer.njk" %}
+  </footer>
+</body>
+</html>
