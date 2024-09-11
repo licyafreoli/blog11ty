@@ -1,12 +1,14 @@
 {% extends "layouts/base.njk" %}
 
-{% block title %}Tags{% endblock %}
-
 {% block content %}
   <h1>Tags</h1>
+  
   <ul>
-    {% for tag in collections.tags %}
-      <li><a href="/tags/{{ tag.slug }}/">{{ tag.title }}</a></li>
+    {% for tag in collections.allTags %}
+      <li>
+        <a href="/tags/{{ tag }}">{{ tag }}</a> - {{ collections[tag].length }} posts
+      </li>
     {% endfor %}
   </ul>
+
 {% endblock %}
